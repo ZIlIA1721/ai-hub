@@ -148,7 +148,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       _selectedTool!.url,
                       style: TextStyle(
                         fontSize: 12,
-                        color: isDark ? Colors.white50 : Colors.black45,
+                        color: isDark ? Colors.white.withOpacity(0.5) : Colors.black.withOpacity(0.45),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,

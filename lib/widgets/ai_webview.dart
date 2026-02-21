@@ -246,7 +246,7 @@ class WebViewContainer extends ConsumerWidget {
             child: Icon(
               Icons.add_circle_outline,
               size: 48,
-              color: isDark ? Colors.white40 : Colors.black38,
+              color: isDark ? Colors.white.withOpacity(0.4) : Colors.black.withOpacity(0.38),
             ),
           ),
           const SizedBox(height: 24),
@@ -263,7 +263,7 @@ class WebViewContainer extends ConsumerWidget {
             '点击左侧 + 按钮添加工具',
             style: TextStyle(
               fontSize: 14,
-              color: isDark ? Colors.white50 : Colors.black45,
+              color: isDark ? Colors.white.withOpacity(0.5) : Colors.black.withOpacity(0.45),
             ),
           ),
         ],

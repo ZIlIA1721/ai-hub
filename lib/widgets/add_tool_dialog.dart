@@ -205,7 +205,7 @@ class _AddToolDialogState extends ConsumerState<AddToolDialog> {
                   tool['url']!,
                   style: TextStyle(
                     fontSize: 12,
-                    color: isDark ? Colors.white50 : Colors.black45,
+                    color: isDark ? Colors.white.withOpacity(0.5) : Colors.black.withOpacity(0.45),
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -229,7 +229,7 @@ class _AddToolDialogState extends ConsumerState<AddToolDialog> {
                 isAdded ? '已添加' : '添加',
                 style: TextStyle(
                   color: isAdded 
-                      ? isDark ? Colors.white50 : Colors.black45
+                      ? isDark ? Colors.white.withOpacity(0.5) : Colors.black.withOpacity(0.45)
                       : Colors.white,
                   fontWeight: FontWeight.w600,
                   fontSize: 14,
@@ -266,12 +266,12 @@ class _AddToolDialogState extends ConsumerState<AddToolDialog> {
               decoration: InputDecoration(
                 hintText: '输入网页链接',
                 hintStyle: TextStyle(
-                  color: isDark ? Colors.white40 : Colors.black38,
+                  color: isDark ? Colors.white.withOpacity(0.4) : Colors.black.withOpacity(0.38),
                 ),
                 border: InputBorder.none,
                 prefixIcon: Icon(
                   Icons.link,
-                  color: isDark ? Colors.white40 : Colors.black38,
+                  color: isDark ? Colors.white.withOpacity(0.4) : Colors.black.withOpacity(0.38),
                 ),
               ),
               keyboardType: TextInputType.url,
@@ -288,12 +288,12 @@ class _AddToolDialogState extends ConsumerState<AddToolDialog> {
               decoration: InputDecoration(
                 hintText: '输入名称（可选）',
                 hintStyle: TextStyle(
-                  color: isDark ? Colors.white40 : Colors.black38,
+                  color: isDark ? Colors.white.withOpacity(0.4) : Colors.black.withOpacity(0.38),
                 ),
                 border: InputBorder.none,
                 prefixIcon: Icon(
                   Icons.edit,
-                  color: isDark ? Colors.white40 : Colors.black38,
+                  color: isDark ? Colors.white.withOpacity(0.4) : Colors.black.withOpacity(0.38),
                 ),
               ),
             ),
